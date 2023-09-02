@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>python objects and clasess</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary"> python objects and clasess</h3>
+
+
+
+	<h5> Python is an object-oriented programming language. Unlike procedure-oriented programming, where the main emphasis is on functions, object-oriented programming stresses on objects.
+An object is simply a collection of data (variables) and methods (functions) that act on those data. Similarly, a class is a blueprint for that object.
+We can think of a class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, etc. Based on these descriptions we build the house. House is the object.
+As many houses can be made from a house's blueprint, we can create many objects from a class. An object is also called an instance of a class and the process of creating this object is called instantiation.</h5>
+
+<h3 class="text-primary">Defining a Class in Python</h3>
+
+
+<h5>Like function definitions begin with the def keyword in Python, class definitions begin with a class keyword.
+The first string inside the class is called docstring and has a brief description of the class. Although not mandatory, this is highly recommended.
+Here is a simple class definition.</h5>
+<br>class MyNewClass:
+    '''This is a docstring. I have created a new class'''
+    pass </br>
+<h5>A class creates a new local namespace where all its attributes are defined. Attributes may be data or functions.
+There are also special attributes in it that begins with double underscores __. For example, __doc__ gives us the docstring of that class.
+As soon as we define a class, a new class object is created with the same name. This class object allows us to access the different attributes as well as to instantiate new objects of that class.
+
+<h3 class="text-primary"> creating a object in a python</h3>
+<h5>We saw that the class object could be used to access different attributes.
+It can also be used to create new object instances (instantiation) of that class. The procedure to create an object is similar to a function call.
+>>> harry = Person()
+This will create a new object instance named harry. We can access the attributes of objects using the object name prefix.
+Attributes may be data or method. Methods of an object are corresponding functions of that class.
+This means to say, since Person.greet is a function object (attribute of class), Person.greet will be a method object.</h5>
+
+
+
+<h5>You may have noticed the self parameter in function definition inside the class but we called the method simply as harry.greet() without any arguments. It still worked.
+This is because, whenever an object calls its method, the object itself is passed as the first argument. So, harry.greet() translates into Person.greet(harry).
+In general, calling a method with a list of n arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method's object before the first argument.
+For these reasons, the first argument of the function in class must be the object itself. This is conventionally called self. It can be named otherwise but we highly recommend to follow the convention.
+Now you must be familiar with class object, instance object, function object, method object and their differences.</h5>
+
+<h3 class="text-primary">Constructors in python</h3>
+<h5>Class functions that begin with double underscore __ are called special functions as they have special meaning.
+Of one particular interest is the __init__() function. This special function gets called whenever a new object of that class is instantiated.
+This type of function is also called constructors in Object Oriented Programming (OOP). We normally use it to initialize all the variables.</h5>
+
+
+
+
+<h5>AttributeError: 'ComplexNumber' object has no attribute 'attr'
+In the above example, we defined a new class to represent complex numbers. It has two functions, __init__() to initialize the variables (defaults to zero) and get_data() to display the number properly.
+An interesting thing to note in the above step is that attributes of an object can be created on the fly. We created a new attribute attr for object num2 and read it as well. But this does not create that attribute for object num1.</h5>
+
+<h3 class="text-primary">Deleting Attributes and Objects</h3>
+<h5>Any attribute of an object can be deleted anytime, using the del statement. 
+
+NameError: name 'c1' is not defined
+Actually, it is more complicated than that. When we do c1 = ComplexNumber(1,3), a new instance object is created in memory and the name c1 binds with it.
+On the command del c1, this binding is removed and the name c1 is deleted from the corresponding namespace. The object however continues to exist in memory and if no other name is bound to it, it is later automatically destroyed.
+This automatic destruction of unreferenced objects in Python is also called garbage collection.
+Deleting objects in Python removes the name binding</h5>
+
+</body>
+</html>

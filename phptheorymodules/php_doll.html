@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>php dollar</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	  <div class="card-body">
+	    <h3 class="text-primary">PHP $ and $$ Variables</h3>
+	    <br>
+	    <h5>The $var (single dollar) is a normal variable with the name var that stores any value like string, integer, float, etc.<br><br>
+			The $$var (double dollar) is a reference variable that stores the value of the $variable inside it.<br><br>
+			To understand the difference better, let's see some examples<br><br>
+			Example 1<br><br>
+			<img src="php7.png">
+			In the above example, we have assigned a value to the variable x as abc. Value of reference variable $$x is assigned as 200.
+			<br><br>
+		</h5>
+	    <br>
+
+	    
+	    <h5>
+	    
+		Now we have printed the values $x, $$x and $abc.<br><br>
+		Example2 <br><br>
+		<img src="php8.png"> <br><br>
+		In the above example, we have assigned a value to the variable x as U.P. Value of reference variable $$x is assigned as Lucknow.
+		<br><br>
+		Now we have printed the values $x, $$x and a string.<br><br>
+		
+		</h5>
+		<br>
+
+		<h3 class="text-primary">Example3</h3> 
+		<h5>
+			
+			<img src="php9.png">
+			<br><br>
+			In the above example, we have assigned a value to the variable name Cat. Value of reference variable ${$name} is assigned as Dog and ${${$name}} as Monkey.<br><br>
+			Now we have printed the values as $name, ${$name}, $Cat, ${${$name}} and $Dog.<br><br>
+		</h5>
+		<br>
+
+		
+	  </div>
+
+	</div>
+</div>
+	
+</body>
+</html>

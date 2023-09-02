@@ -1,0 +1,55 @@
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title> python Exception Handling</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary"> Python Exception Handling</h3>
+
+
+
+	<h5>Python Exception Handling Using try, except and finally statement
+In this  you'll learn how to handle exceptions in your Python program using try, except and finally statements with the help of examples.
+Exceptions in Python
+Python has many built-in exceptions that are raised when your program encounters an error (something in the program goes wrong).
+When these exceptions occur, the Python interpreter stops the current process and passes it to the calling process until it is handled. If not handled, the program will crash.
+For example, let us consider a program where we have a function A that calls function B, which in turn calls function C. If an exception occurs in function C but is not handled in C, the exception passes to B and then to A.
+If never handled, an error message is displayed and our program comes to a sudden unexpected halt.</h5>
+<h3 class="text-primary">Catching Exceptions in Python </h3>
+
+<h5>In Python, exceptions can be handled using a try statement.
+The critical operation which can raise an exception is placed inside the try clause. The code that handles the exceptions is written in the except clause.
+We can thus choose what operations to perform once we have caught the exception. Here is a simple example.</h5>
+<h3 class="text-primary">Catching Specific Exceptions in Python</h3>
+
+
+In the above example, we did not mention any specific exception in the except clause.
+This is not a good programming practice as it will catch all exceptions and handle every case in the same way. We can specify which exceptions an except clause should catch.
+A try clause can have any number of except clauses to handle different exceptions, however, only one will be executed in case an exception occurs.
+We can use a tuple of values to specify multiple exceptions in an except clause.</p> 
+
+<h3 class="text-primary">Raising Exceptions in Python</h3>
+<h5>In Python programming, exceptions are raised when errors occur at runtime. We can also manually raise exceptions using the raise keyword.</h5>
+
+<h3 class="text-primary">Python try with else clause</h3>
+<h5>In some situations, you might want to run a certain block of code if the code block inside try ran without any errors. For these cases, you can use the optional else keyword with the try statement.</h5>
+
+
+
+<h3 class="text-primary">Python try...finally </h3>
+<h5>The try statement in Python can have an optional finally clause. This clause is executed no matter what, and is generally used to release external resources.
+For example, we may be connected to a remote data center through the network or working with a file or a Graphical User Interface (GUI).
+In all these circumstances, we must clean up the resource before the program comes to a halt whether it successfully ran or not. These actions (closing a file, GUI or disconnecting from network) are performed in the finally clause to guarantee the execution.</h5>

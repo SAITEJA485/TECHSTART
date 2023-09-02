@@ -1,0 +1,70 @@
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title> python files I|o</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary"> python files I|o</h3>
+
+
+<h5>Files are named locations on disk to store related information. They are used to permanently store data in a non-volatile memory (e.g. hard disk).
+Since Random Access Memory (RAM) is volatile (which loses its data when the computer is turned off), we use files for future use of the data by permanently storing them.
+When we want to read from or write to a file, we need to open it first. When we are done, it needs to be closed so that the resources that are tied with the file are freed.
+Hence, in Python, a file operation takes place in the following order:
+1.Open a file
+2.Read or write (perform operation)
+3.Close the file</h5>
+
+<h3 class="text-primary">Opening Files in Python </h3>
+<h5>Python has a built-in open() function to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file accordingly.
+>>> f = open("test.txt")    # open file in current directory>>> f = open("C:/Python38/README.txt")  # specifying full path
+We can specify the mode while opening a file. In mode, we specify whether we want to read r, write w or append a to the file. We can also specify if we want to open the file in text mode or binary mode.
+The default is reading in text mode. In this mode, we get strings when reading from the file.
+On the other hand, binary mode returns bytes and this is the mode to be used when dealing with non-text files like images or executable files.
+<h3 class="text-primary">closing Files in Python </h3>
+<h5>When we are done with performing operations on the file, we need to properly close the file.
+Closing a file will free up the resources that were tied with the file. It is done using the close() method available in Python.
+Python has a garbage collector to clean up unreferenced objects but we must not rely on it to close the file.
+f = open("test.txt", encoding = 'utf-8')# perform file operations
+f.close()
+This method is not entirely safe. If an exception occurs when we are performing some operation with the file, the code exits without closing the file.
+A safer way is to use a try...finally block.
+try:
+   <br>f = open("test.txt", encoding = 'utf-8')
+   <br># perform file operationsfinally:
+   <br>f.close()
+This way, we are guaranteeing that the file is properly closed even if an exception is raised that causes program flow to stop.
+The best way to close a file is by using the with statement. This ensures that the file is closed when the block inside the with statement is exited.
+We don't need to explicitly call the close() method. It is done internally.
+with open("test.txt", encoding = 'utf-8') as f:
+   # perform file operations</h5>
+
+<h3 class="text-primary">Writing  Files in Python </h3>
+<h5>In order to write into a file in Python, we need to open it in write w, append a or exclusive creation x mode.
+We need to be careful with the w mode, as it will overwrite into the file if it already exists. Due to this, all the previous data are erased.
+Writing a string or sequence of bytes (for binary files) is done using the write() method. This method returns the number of characters written to the file.
+with open("test.txt",'w',encoding = 'utf-8') as f:
+  <br> f.write("my first file\n")
+   <br>f.write("This file\n\n")
+   <br>f.write("contains three lines\n")
+This program will create a new file named test.txt in the current directory if it does not exist. If it does exist, it is overwritten.
+We must include the newline characters ourselves to distinguish the different lines.</h5>
+
+<h3 class="text-primary">reading Files in Python </h3>
+<h5>To read a file in Python, we must open the file in reading r mode.
+There are various methods available for this purpose. We can use the read(size) method to read in the size number of data. If the size parameter is not specified, it reads and returns up to the end of the file.
+
+</h5>

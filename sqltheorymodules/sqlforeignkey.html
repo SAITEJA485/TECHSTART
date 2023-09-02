@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>sqlintroduction</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	  <div class="card-body">
+	    <h3 class="text-primary">SQL Keys</h3>
+	    
+	   
+	    <br>
+
+	    <h3 class="text-primary">SQL Foreign Key</h3>
+	    <h5>
+	    	In the relational databases, a foreign key is a field or a column that is used to establish a link between two tables.<br><br>
+
+			In simple words you can say that, a foreign key in one table used to point primary key in another table.<br><br>
+			Let us take an example to explain it:<br><br>
+			CREATE TABLE orders  <br><br>
+			(  <br><br>
+			O_Id int NOT NULL, <br><br> 
+			Order_No  int NOT NULL, <br><br> 
+			S_Id int,  <br><br>
+			PRIMAY KEY (O_Id),  <br><br>
+			FOREIGN KEY (S_Id) REFERENCES Persons (S_Id)  
+			)  
+
+
+
+
+
+
+
+ <br><br>
+ 			
+           
+		</h5>
+		<br>
+<h4 class="text-danger">view/Download notes</h4>
+            <a href="https://drive.google.com/file/d/1Vxpucd8HonBlyA881oyegT0LcBg6dSGW/view?usp=sharing">click here to view file</a>
+		
+	  </div>
+
+	</div>
+</div>
+	
+</body>
+</html>

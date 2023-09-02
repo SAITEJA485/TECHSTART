@@ -1,0 +1,71 @@
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>Inheritence in python</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary">Inheritance in Python</h3>
+      
+     
+      <br>
+
+      <h3 class="text-primary">Inheritance in Python</h3>
+
+<h5>Inheritance is a powerful feature in object oriented programming.
+It refers to defining a new class with little or no modification to an existing class. The new class is called derived (or child) class and the one from which it inherits is called the base (or parent) class.</h5>
+
+<br>Python Inheritance Syntax</br></br>
+<br>class BaseClass:</br></br>
+ <br> Body of base class</br>
+<br>class DerivedClass(BaseClass):</br>
+  Body of derived class
+Derived class inherits features from the base class where new features can be added to it. This results in re-usability of code.</h5>
+
+
+
+  
+<h5>This class has data attributes to store the number of sides n and magnitude of each side as a list called sides.
+The inputSides() method takes in the magnitude of each side and dispSides() displays these side lengths.
+A triangle is a polygon with 3 sides. So, we can create a class called Triangle which inherits from Polygon. This makes all the attributes of Polygon class available to the Triangle class.
+We don't need to define them again (code reusability). Triangle can be defined as follows.</h5>
+<h5><br>class Triangle(Polygon):
+    <br>def __init__(self):
+        <br>Polygon.__init__(self,3)
+
+    <br>def findArea(self):
+        <br>a, b, c = self.sides
+        <br># calculate the semi-perimeter
+        <br>s = (a + b + c) / 2
+       <br> area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+       <br> print('The area of the triangle is %0.2f' %area)</h5>
+<h5>However, class Triangle has a new method findArea() to find and print the area of the triangle. Here is a sample run.
+<br>>>> t = Triangle()<br>
+<br>>>> t.inputSides()
+<br>Enter side 1 : 3
+<br>Enter side 2 : 5
+<br>Enter side 3 : 4
+<br>>>> t.dispSides()
+<br>Side 1 is 3.0
+<br>Side 2 is 5.0
+<br>Side 3 is 4.0
+<br>>>> t.findArea()</h5>
+<h5>The area of the triangle is 6.00
+We can see that even though we did not define methods like inputSides() or dispSides() for class Triangle separately, we were able to use them.
+If an attribute is not found in the class itself, the search continues to the base class. This repeats recursively, if the base class is itself derived from other classes.</h5>
+

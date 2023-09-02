@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>Python Multiple Inheritance</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary"> Python Multiple Inheritance</h3>
+
+
+<h5>A class can be derived from more than one base class in Python, similar to C++. This is called multiple inheritance.
+In multiple inheritance, the features of all the base classes are inherited into the derived class. The syntax for multiple inheritance is similar to single inheritance.can also inherit from a derived class. This is called multilevel inheritance. It can be of any depth in Python.
+In multilevel inheritance, features of the base class and the derived class are inherited into the new derived class.
+An example with corresponding visualization is given below.
+                        class Base:
+                            pass
+                        class Derived1(Base):
+                            pass
+                        class Derived2(Derived1):
+                            pass
+Here, the Derived1 class is derived from the Base class, and the Derived2 class is derived from the Derived1 class.</h5>
+<h3 class="text-primary">Method resoultion order in python</h3>
+<h5> InPython is derived from the object class. It is the most base type in Python.
+So technically, all other classes, either built-in or user-defined, are derived classes and all objects are instances of the object class.
+# Output: Trueprint(issubclass(list,object))
+# Output: Trueprint(isinstance(5.5,object))
+# Output: Trueprint(isinstance("Hello",object))
+In the multiple inheritance scenario, any specified attribute is searched first in the current class. If not found, the search continues into parent classes in depth-first, left-right fashion without searching the same class twice.
+So, in the above example of MultiDerived class the search order is [MultiDerived, Base1, Base2, object]. This order is also called linearization of MultiDerived class and the set of rules used to find this order is called Method Resolution Order (MRO).
+MRO must prevent local precedence ordering and also provide monotonicity. It ensures that a class always appears before its parents. In case of multiple parents, the order is the same as tuples of base classes.
+MRO of a class can be viewed as the __mro__ attribute or the mro() method. The former returns a tuple while the latter returns a list.</h5>
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>variable scope</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	  <div class="card-body">
+	    <h3 class="text-primary">PHP Variable Scope</h3>
+	    <br>
+	    <h5>The scope of a variable is defined as its range in the program under which it can be accessed. In other words, "The scope of a variable is the portion of the program within which it is defined and can be accessed."<br><br>
+		PHP has three types of variable scopes:<br><br>
+		1.Local variable<br><br>
+		2.Global variable<br><br>
+		3.Static variable<br><br>
+		
+<br><br>
+</h5>
+	    <br>
+
+	    <h3 class="text-primary">Local Variable</h3>
+	    <h5>
+	    
+			The variables that are declared within a function are called local variables for that function. These local variables have their scope only in that particular function in which they are declared. This means that these variables cannot be accessed outside the function, as they have local scope.<br><br>
+			A variable declaration outside the function with the same name is completely different from the variable declared inside the function. Let's understand the local variables with the help of an example:<br><br>
+			<img src="php48.png">
+			<br><br>
+	</h5>
+		<br>
+
+		<h3 class="text-primary">Global Variable</h3> 
+		<h5>
+			
+			The global variables are the variables that are declared outside the function. These variables can be accessed anywhere in the program. To access the global variable within a function, use the GLOBAL keyword before the variable. However, these variables can be directly accessed or used outside the function without any keyword. Therefore there is no need to use any keyword to access a global variable outside the function.<br><br>
+			Let's understand the global variables with the help of an example:<br><br>
+			<img src="php49.png">
+			<br><br>
+		</h5>
+		<br>
+
+		<h3 class="text-primary">Static Variable</h3>
+		<h5>
+			It is a feature of PHP to delete the variable, once it completes its execution and memory is freed. Sometimes we need to store a variable even after completion of function execution. Therefore, another important feature of variable scoping is static variable. We use the static keyword before the variable to define a variable, and this variable is called as static variable.<br><br>
+			Static variables exist only in a local function, but it does not free its memory after the program execution leaves the scope. Understand it with the help of an example:
+			<br><br>
+			<img src="php50.png"><br><br>
+		</h5>
+		<br>
+
+		
+		<h5>
+			
+			You have to notice that $num1 regularly increments after each function call, whereas $num2 does not. This is why because $num1 is not a static variable, so it freed its memory after the execution of each function call.<br><br>
+		</h5>
+	  </div>
+	</div>
+</div>
+	
+</body>
+</html>

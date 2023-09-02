@@ -1,0 +1,41 @@
+<html><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>Python Errors and Built-in Exceptions</title>
+  <style type="text/css">
+    *
+    {
+      font-family: 'Secular One', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card">
+
+    <div class="card-body">
+      <h3 class="text-primary"> Python Errors and Built-in Exceptions</h3>
+
+<h3 class="text-primary"> Python Errors and Built-in Exceptions</h3>
+<h5>Python Errors and Built-in Exceptions
+We can make certain mistakes while writing a program that lead to errors when we try to run it. A python program terminates as soon as it encounters an unhandled error. These errors can be broadly classified into two classes:
+1.Syntax errors
+2.Logical errors (Exceptions</h5>
+
+<h3 class="text-primary">Python Syntax Errors </h3>
+
+<h5>Error caused by not following the proper structure (syntax) of the language is called syntax error or parsing error.</h5>
+
+
+<h3 class="text-primary">Python Logical Errors (Exceptions)</h3>
+<h5>Errors that occur at runtime (after passing the syntax test) are called exceptions or logical errors.
+For instance, they occur when we try to open a file(for reading) that does not exist (FileNotFoundError), try to divide a number by zero (ZeroDivisionError), or try to import a module that does not exist (ImportError).
+Whenever these types of runtime errors occur, Python creates an exception object. If not handled properly, it prints a traceback to that error along with some details about why that error occurred.
+
+<h3 class="text-primary">Python Built-in Exceptions</h3>
+<h5>Illegal operations can raise exceptions. There are plenty of built-in exceptions in Python that are raised when corresponding errors occur. We can view all the built-in exceptions using the built-in local() function as follows:
+print(dir(locals()['__builtins__']))
+locals()['__builtins__'] will return a module of built-in exceptions, functions, and attributes. dir allows us to list these attributes as strings.
+Some of the common built-in exceptions in Python programming along with the error that cause them are listed below:</h5>
