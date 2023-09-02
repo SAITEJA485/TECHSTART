@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javamath</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Math</h3><br>
+	 		<h5>
+	 		The Java Math class has many methods that allows you to perform mathematical tasks on numbers.<br><br>
+
+			1. The Math.max(x,y) method can be used to find the highest value of x and y.<br><br>
+			Example:
+			<pre>
+			public class MaxExample1   
+			{  
+			    public static void main(String args[])  
+			    {  
+			        int x = 20;  
+			        int y = 50;  
+			        //print the maximum of two numbers   
+			        System.out.println(Math.max(x, y));  
+			    }  
+			}  
+			</pre><br>
+			2. The Math.min(x,y) method can be used to find the lowest value of x and y.<br><br>
+			Example:
+			<pre>
+			public class MinExample1   
+			{  
+			    public static void main(String args[])  
+			    {  
+			        int x = 20;  
+			        int y = 50;  
+			        //print the maximum of two numbers   
+			        System.out.println(Math.min(x, y));  
+			    }  
+			}  
+			</pre><br>
+			3. The Math.sqrt(x) method returns the square root of x.<br><br>
+			Example:
+			<pre>
+			public class SqrtExample1  
+			{  
+			    public static void main(String[] args)   
+			    {  
+			        double x = 81.0;  
+			        // Input positive value, Output square root of x  
+			        System.out.println(Math.sqrt(x));  
+			    }  
+			}  
+			</pre><br>
+			4. The Math.abs(x) method returns the absolute (positive) value of x.<br><br>
+			Example:
+			<pre>
+			public class AbsExample1  
+			{  
+			    public static void main(String args[])  
+			    {  
+			        int x = 78;  
+			        int y = -48;  
+			        //print the absolute value of int type  
+			        System.out.println(Math.abs(x));  
+			        System.out.println(Math.abs(y));  
+			        System.out.println(Math.abs(Integer.MIN_VALUE));  
+			    }  
+			}  
+			</pre><br>
+			5. Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive).<br><br>
+			Example:
+			<pre>
+			public class RandomExample1  
+			{  
+			    public static void main(String[] args)   
+			    {  
+			        // generate random number  
+			        double a = Math.random();  
+			        double b = Math.random();  
+			        // Output is different every time this code is executed    
+			        System.out.println(a);  
+			        System.out.println(b);  
+			    }  
+			}  
+			</pre><br>
+			6. int randomNum = (int)(Math.random() * 101);  // 0 to 100.<br><br>
+			Example:
+			<pre>
+			class MyClass 
+			{
+			  int randomWithRange(int min, int max)
+			  {   //defining method for a random number generator
+
+			    int range = (max - min) + 1;     
+			    return (int)(Math.random() * range) + min;
+			  }  
+			  public static void main( String args[] ) 
+			  {
+			    MyClass obj1=new MyClass();       // creating an object of MyClass
+			    int rand=obj1.randomWithRange(1,100); // range is from 1 to 100 
+			    System.out.println(rand);
+			  }
+			}
+			 
+			</pre>
+
+	 		</h5><br><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/17Q4UQBFen4biLg8Qx9u3dTV3NnxYVv81/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

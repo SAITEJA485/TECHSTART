@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javapolymorphism</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Polymorphism</h3><br>
+	 		<h5>
+	 			Polymorphism in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.<br><br>
+			There are two types of polymorphism in Java:<br><br> 
+			1. compile-time polymorphism <br>
+			2. runtime polymorphism.
+			</h5><br><br>
+			<h5>We can perform polymorphism in java by method overloading and method overriding.</h5><br>
+			<h5 class="text-primary">1.Compile-time polymorphism:</h5>
+			<h5>
+    		Whenever an object is bound with their functionality at the compile-time, this is known as the compile-time polymorphism. At compile-time, java knows which method to call by checking the method signatures. So this is called compile-time polymorphism or static or early binding.
+    		<br><br>
+    		Example:
+    		<pre>
+    			class SimpleCalculator
+			{
+			    int add(int a, int b)
+			    {
+			         return a+b;
+			    }
+			    int  add(int a, int b, int c)  
+			    {
+			         return a+b+c;
+			    }
+			}
+			public class Demo
+			{
+			   public static void main(String args[])
+			   {
+			      SimpleCalculator obj = new SimpleCalculator();
+			       System.out.println(obj.add(10, 20));
+			       System.out.println(obj.add(10, 20, 30));
+			   }
+			}
+    		</pre>
+			</h5><br>
+			<h5 class="text-primary">2.Runtime polymorphism</h5>
+			<h5>
+    		Whenever an object is bound with the functionality at run time, this is known as runtime polymorphism. The runtime polymorphism can be achieved by method overriding<br><br>
+    		Example:
+    		<pre>
+    			class Bike
+    			{  
+			  void run()
+			  {
+			  	System.out.println("running");
+			  }  
+			}  
+			class Splendor extends Bike
+			{  
+			  void run()
+			  {
+			  	System.out.println("running safely with 60km");
+			  }  
+			  
+			  public static void main(String args[])
+			  {  
+			    Bike b = new Splendor();//upcasting  
+			    b.run();  
+			  }  
+			}  	
+    		</pre>
+			</h5><br><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1jcNDcVTC0aQT-Sc9TGUXgBVE-t2atsvB/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

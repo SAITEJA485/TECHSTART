@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javaswitch</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Switch</h3>
+	 		<h5>
+	 		The Java switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement. The switch statement works with byte, short, int, long, enum types, String and some wrapper types like Byte, Short, Int, and Long. Since Java 7, you can use strings in the switch statement.<br><br>
+
+			Syntax:
+			<pre>
+			switch(expression)
+			{    
+			case value1:    
+			 		//code to be executed;    
+			 		break;  //optional  
+			case value2:    
+			 		//code to be executed;    
+			 		break;  //optional  
+			.
+			.
+			.    
+			    
+			default:     
+			 code to be executed if all cases are not matched;    
+			} 
+			</pre><br>
+			Example:
+			<pre>
+			//Java Program to demonstrate the example of Switch statement  
+			//where we are printing month name for the given number  
+			public class SwitchMonthExample 
+			{    
+				public static void main(String[] args) 
+				{    
+				    //Specifying month number  
+				    int month=7;    
+				    String monthString="";  
+				    //Switch statement  
+				    switch(month){    
+				    //case statements within the switch block  
+				    case 1: monthString="1 - January";  
+				    break;    
+				    case 2: monthString="2 - February";  
+				    break;    
+				    case 3: monthString="3 - March";  
+				    break;    
+				    case 4: monthString="4 - April";  
+				    break;    
+				    case 5: monthString="5 - May";  
+				    break;    
+				    case 6: monthString="6 - June";  
+				    break;    
+				    case 7: monthString="7 - July";  
+				    break;    
+				    case 8: monthString="8 - August";  
+				    break;    
+				    case 9: monthString="9 - September";  
+				    break;    
+				    case 10: monthString="10 - October";  
+				    break;    
+				    case 11: monthString="11 - November";  
+				    break;    
+				    case 12: monthString="12 - December";  
+				    break;    
+				    default:System.out.println("Invalid Month!");    
+				    }    
+				    //Printing month of the given number  
+				    System.out.println(monthString);  
+				}    
+			}   	
+			</pre>
+			</h5><br><br>   
+
+			<h5 class="text-primary">Java Switch Statement is fall-through</h5>
+			<h5>
+			The Java switch statement is fall-through. It means it executes all statements after the first match if a break statement is not present.
+			</h5><br>
+			<h5 class="text-primary">Break</h5>
+			<h5>
+			When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.<br><br>
+
+			The Java break statement is used to break loop or switch statement. It breaks the current flow of the program at specified condition. In case of inner loop, it breaks only inner loop.<br><br>
+
+			We can use Java break statement in all types of loops such as for loop, while loop and do-while loop.<br><br>
+
+			Syntax:<br><br>
+
+			jump-statement; <br>   
+			break;<br><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/19PZreeGw6Nq-xKrPGz40TxPWGaOSbQ3q/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

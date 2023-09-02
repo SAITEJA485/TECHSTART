@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javaintroduction</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+	<title>java syntax</title>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+			<h3 class="text-primary">Java Syntax</h3>
+			<h5>
+				In Java, every application begins with a class name, and that class must match the filename.
+			</h5>
+			<br>
+
+			<h5>
+			<pre>
+			public class <span class="text-primary">class_name</span><br>
+			{
+				public static void main(String[] args)
+				{
+					System.out.println(" ");
+				}
+			}
+			</pre>
+			</h5>
+			<br>
+
+			<h5 class="text-primary">Parameters Explanation</h5>
+			<h5>
+			1. class keyword is used to declare a class in java.<br><br>
+			2. public keyword is an access modifier which represents visibility. It means it is visible to all.<br><br>
+
+			3. static is a keyword. If we declare any method as static, it is known as the static method. The core advantage of the static method is that there is no need to create an object to invoke the static method. The main method is 
+			executed by the JVM, so it doesn't require to create an object to invoke the main method. So it saves memory.<br><br>
+
+			4. void is the return type of the method. It means it doesn't return any value.<br><br>
+
+			5. main represents the starting point of the program.<br><br>
+
+			6. String[] args is used for command line argument. We will learn it later.<br><br>
+
+			7. System.out.println() is used to print statement. Here, System is a class, out is the object of PrintStream class, println() is the method of PrintStream class. We will learn about the internal working of System.out.println statement later.
+			</h5>
+			<br>
+
+			<h5 class="text-primary">Valid java main method signature</h5>
+			<h5>
+			1. public static void main(String[] args) <br><br>
+			2. public static void main(String []args)  <br><br>
+			3. public static void main(String args[])  <br><br>
+			4. public static void main(String... args)  <br><br>
+			5. static public void main(String[] args)  <br><br>
+			6. public static final void main(String[] args)  <br><br>
+			7. final public static void main(String[] args)  <br><br>
+			8. final strictfp public static void main(String[] args)  
+			</h5>
+			<br>
+
+			<h5 class="text-primary">Invalid java main method signature</h5>
+			<h5>
+				1. public void main(String[] args)  <br><br>
+				2. static void main(String[] args)  <br><br>
+				3. public void static main(String[] args)  <br><br>
+				4. abstract public static void main(String[] args)
+			</h5>
+			<br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1FRvG0muHd1WQI-rJnqpA0A1cTKMm40E4/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

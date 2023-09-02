@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javaifelse</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+			<h3 class="text-primary">Java If-Else</h3><br>
+
+			<h5 class="text-primary">Java if Statement</h5>
+			<h5>
+
+			The Java if statement tests the condition. It executes the if block if condition is true.<br><br>
+
+			Syntax:
+			<pre>
+			if(condition)
+			{  
+				//code to be executed  
+			}  
+			</pre><br><br>
+
+			Example:<br>
+			<pre>
+				//Java Program to demonstate the use of if statement.  
+				public class IfExample 
+				{  
+				public static void main(String[] args) 
+					{  
+					    //defining an 'age' variable  
+					    int age=20;  
+					    //checking the age  
+					    if(age>18)
+					    {  
+					        System.out.print("Age is greater than 18");  
+					    }  
+					}  
+				}  
+
+			</pre>
+
+			</h5>
+			<br><br>
+
+			<h5 class="text-primary">Java if-else Statement</h5>
+
+			<h5>The Java if-else statement also tests the condition. It executes the if block if condition is true otherwise else block is executed.<br><br>
+
+			Syntax:
+			<pre>
+			if(condition)
+			{  
+				//code if condition is true  
+			}
+			else
+			{  
+				//code if condition is false  
+			} 
+			</pre><br><br>
+
+			Example:<br>
+			<pre>
+				//A Java Program to demonstrate the use of if-else statement.  
+				//It is a program of odd and even number.  
+				public class IfElseExample 
+				{  
+				public static void main(String[] args) 
+				{  
+				    //defining a variable  
+				    int number=13;  
+				    //Check if the number is divisible by 2 or not  
+				    if(number%2==0)
+				    {  
+				        System.out.println("even number");  
+				    }
+				    else
+				    {  
+				        System.out.println("odd number");  
+				    }  
+				}  
+				}  
+			</pre>
+
+			</h5><br>
+
+			<h5 class="text-primary">Java if-else-if ladder Statement</h5>
+			<h5>
+			The if-else-if ladder statement executes one condition from multiple statements.<br><br>
+
+			Syntax:
+			<pre>
+			if(condition1)
+			{  
+				//code to be executed if condition1 is true  
+			}
+			else if(condition2)
+			{  
+				//code to be executed if condition2 is true  
+			}  
+			else if(condition3)
+			{  
+				//code to be executed if condition3 is true  
+			}  
+			.
+			.
+			. 
+			else
+			{  
+				//code to be executed if all the conditions are false  
+			}  
+			</pre><br><br>
+			Example:<br>
+			
+			<pre>
+				//Java Program to demonstrate the use of If else-if ladder.  
+				//It is a program of grading system for fail, D grade, C grade, B grade, A grade and A+.  
+				public class IfElseIfExample 
+				{  
+					public static void main(String[] args) 
+					{  
+					    int marks=65;  
+					      
+					    if(marks<50){  
+					        System.out.println("fail");  
+					    }  
+					    else if(marks>=50 && marks<60)
+					    {  
+					        System.out.println("D grade");  
+					    }  
+					    else if(marks>=60 && marks<70)
+					    {  
+					        System.out.println("C grade");  
+					    }  
+					    else if(marks>=70 && marks<80)
+					    {  
+					        System.out.println("B grade");  
+					    }  
+					    else if(marks>=80 && marks<90)
+					    {  
+					        System.out.println("A grade");  
+					    }
+					    else if(marks>=90 && marks<100)
+					    {  
+					        System.out.println("A+ grade");  
+					    }
+					    else
+					    {  
+					        System.out.println("Invalid!");  
+					    }  
+					}  
+				}  
+			</pre>
+			</h5><br>
+
+			<h5 class="text-primary">Java Nested if statement</h5>
+			<h5>
+			The nested if statement represents the if block within another if block. Here, the inner if block condition executes only when outer if block condition is true.<br><br>
+
+			Syntax:
+			<pre>
+			if(condition)
+			{    
+			    //code to be executed    
+			    if(condition)
+				{  
+			        //code to be executed    
+			   	}    
+			} 
+			</pre><br><br>
+			Example:<br>
+			<pre>
+			//Java Program to demonstrate the use of Nested If Statement.  
+			public class JavaNestedIfExample 
+			{    
+				public static void main(String[] args) 
+				{    
+					//Creating two variables for age and weight  
+					int age=20;  
+					int weight=80;    
+					//applying condition on age and weight  
+					if(age>=18)
+					{    
+					    if(weight>50)
+					    {  
+					        System.out.println("You are eligible to donate blood");  
+					    }    
+					}    
+				}
+			} 
+			</pre>
+			</h5>
+			<br>
+
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1oeU0_QyR9loySG7WkNUWy-Xz8COUA4Bj/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

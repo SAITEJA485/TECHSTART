@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javaabstraction</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Abstraction</h3><br>
+	 		<h5>
+			Data abstraction is the process of hiding certain details and showing only essential information to the user.<br><br>
+			Abstraction can be achieved with either abstract classes or interfaces.<br><br>
+
+			The abstract keyword is a non-access modifier, used for classes and methods:<br><br>
+
+			<span class="text-primary">1.Abstract class:</span> is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).<br><br>
+
+			<span class="text-primary">2. Abstract method:</span> can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).<br><br>
+
+			3. An abstract class can have both abstract and regular methods.<br><br>
+
+			4.To access the abstract class, it must be inherited from another class.<br><br>
+
+			<span class="text-primary">Why And When To Use Abstract Classes and Methods?</span><br><br>
+
+			To achieve security - hide certain details and only show the important details of an object<br><br>
+			</h5>
+			<h5>
+			Example:
+			<pre>
+			abstract class Bike
+			{  
+				abstract void run();  
+			}  
+			class Honda4 extends Bike
+			{  
+				void run()
+				{
+					System.out.println("running safely");
+				}  
+				public static void main(String args[])
+				{  
+					Bike obj = new Honda4();  
+					obj.run();  
+				}  
+			}  
+			</pre>
+			</h5><br><br>
+			<h5 class="text-primary">Interfaces</h5>
+			<h5>
+			Another way to achieve abstraction in Java, is with interfaces.<br><br>
+
+			An interface is a completely "abstract class" that is used to group related methods with empty bodies.<br><br>
+
+			To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the implements keyword (instead of extends). The body of the interface method is provided by the "implement" class.<br><br>
+
+			<span class="text-primary">Why And When To Use Interfaces?</span><br>
+
+			To achieve security - hide certain details and only show the important details of an object (interface).<br><br>
+
+			Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma.<br><br>
+
+			<span class="text-primary">Multiple Interfaces</span><br>
+
+			To implement multiple interfaces, separate them with a comma.<br><br>
+			Example:
+			<pre>
+			interface printable
+			{  
+				void print();  
+			}  
+			class A6 implements printable
+			{  
+				public void print()
+				{
+					System.out.println("Hello");
+				}  
+				  
+				public static void main(String args[])
+				{  
+					A6 obj = new A6();  
+					obj.print();  
+				}  
+			}  	
+			</pre>
+			</h5><br><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1w1AHQsUU_uuhYI6IczT86wfhaEm3y0Cm/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

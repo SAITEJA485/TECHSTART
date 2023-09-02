@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javainheritance</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Inheritance</h3><br>
+	 		<h5>
+			Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).<br><br>
+
+			Inheritance represents the IS-A relationship which is also known as a parent-child relationship.<br><br>
+
+			<h5 class="text-primary">Why use inheritance in java</h5>
+			<h5>
+			1. For Method Overriding (so runtime polymorphism can be achieved).<br>
+			2. For Code Reusability.
+			</h5><br><br>
+
+			<h5 class="text-primary">Terms used in Inheritance</h5>
+			<h5>
+			1. Class: A class is a group of objects which have common properties. It is a template or blueprint from which objects are created.<br><br>
+			2. Sub Class/Child Class: Subclass is a class which inherits the other class. It is also called a derived class, extended class, or child class.<br><br>
+			3. Super Class/Parent Class: Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.<br><br>
+			4. Reusability: As the name specifies, reusability is a mechanism which facilitates you to reuse the fields and methods of the existing class when you create a new class. You can use the same fields and methods already defined in the previous class.<br><br>
+
+			The syntax of Java Inheritance:
+			<pre>
+			class Subclass-name extends Superclass-name  
+			{  
+			   //methods and fields  
+			}  
+			</pre><br>
+			Example:
+			<pre>
+			class Employee
+			{  
+			 float salary=40000;  
+			}  
+			class Programmer extends Employee
+			{  
+			 int bonus=10000;  
+			 	public static void main(String args[])
+				{  
+				   Programmer p=new Programmer();  
+				   System.out.println("Programmer salary is:"+p.salary);  
+				   System.out.println("Bonus of Programmer is:"+p.bonus);  
+				}  
+			}  	
+			</pre>
+			</h5><br>
+			<h5>
+			The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality.
+			</h5><br><br>
+
+			<h5 class="text-primary">Types of inheritance in java</h5>
+			<h5>
+			On the basis of class, there can be three types of inheritance in java: <br><br>
+			single<br> multilevel<br>  hierarchical.<br><br>
+
+			In java programming, multiple and hybrid inheritance is supported through interface only.<br><br>
+
+			<h5 class="text-primary">1.Single Inheritance Example</h5>
+			<h5>
+			When a class inherits another class, it is known as a single 	inheritance. In the example given below, Dog class inherits the Animal class, so there is the single inheritance.
+			</h5><br><br>
+
+			<h5 class="text-primary">2.Multilevel Inheritance Example</h5>
+			<h5>
+			When there is a chain of inheritance, it is known as multilevel inheritance. BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance.
+			</h5><br><br>
+
+			<h5 class="text-primary">3.Hierarchical Inheritance Example</h5>
+			<h5>
+			When two or more classes inherits a single class, it is known as hierarchical inheritance. Dog and Cat classes inherits the Animal class, so there is hierarchical inheritance.
+			</h5><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1fmBBlk08_Y5H30yJqBs73Q0Kq1HyZcxy/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

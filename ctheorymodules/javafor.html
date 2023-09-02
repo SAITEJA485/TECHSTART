@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javafor</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+			<h3 class="text-primary">Java For</h3>
+			<h5>
+			The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.<br><br>
+
+			There are three types of for loops in java.<br><br>
+
+			1. Simple For Loop<br>
+			2. For-each or Enhanced For Loop<br>
+			3. Labeled For Loop<br>
+			</h5><br>
+			<h5 class="text-primary">Java Simple For Loop</h5>
+			<h5>
+			A simple for loop is the same as C/C++. We can initialize the variable, check condition and increment/decrement value. It consists of four parts:<br><br>
+
+			1. Initialization: It is the initial condition which is executed once when the loop starts. Here, we can initialize the variable, or we 	can use an already initialized variable. It is an optional condition.<br>
+			2. Condition: It is the second condition which is executed each time to test the condition of the loop. It continues execution until the 	condition is false. It must return boolean value either true or false. It is an optional condition.<br>
+			3. Statement:The statement of the loop is executed each time until the second condition is false.<br>
+			4. Increment/Decrement: It increments or decrements the variable value. It is an optional condition.<br><br>
+
+			Syntax:
+			<pre>
+			for(initialization;condition;incr/decr)
+			{  
+				//statement or code to be executed  
+			}  
+			</pre><br>
+			Example:
+			<pre>
+			//Java Program to demonstrate the example of for loop  
+			//which prints table of 1  
+			public class ForExample 
+			{  
+				public static void main(String[] args) 
+				{  
+				    //Code of Java for loop  
+				    for(int i=1;i<=10;i++)
+				    {  
+				        System.out.println(i);  
+				    }  
+				}  
+			}  	
+			</pre>
+
+			</h5><br><br>
+
+			<h5 class="text-primary">Java for-each Loop</h5>
+			<h5>
+			The for-each loop is used to traverse array or collection in java. It is easier to use than simple for loop because we don't need to increment value and use subscript notation.<br>
+
+			It works on elements basis not index. It returns element one by one in the defined variable.<br><br>
+
+
+			Syntax:
+			<pre>
+			for(Type var:array)
+			{  
+				//code to be executed  
+			}  
+			</pre><br>
+			Example:
+			<pre>
+			//Java For-each loop example which prints the  
+			//elements of the array  
+			public class ForEachExample 
+			{  
+				public static void main(String[] args) 
+				{  
+				    //Declaring an array  
+				    int arr[]={12,23,44,56,78};  
+				    //Printing array using for-each loop  
+				    for(int i:arr){  
+				        System.out.println(i);  
+				    }  
+				}  
+			} 
+			</pre>
+			</h5><br><br>
+
+			<h5 class="text-primary">Java Labeled For Loop</h5>
+			<h5>
+			We can have a name of each Java for loop. To do so, we use label before the for loop. It is useful if we have nested for loop so that we can break/continue specific for loop.<br>
+
+			Usually, break and continue keywords breaks/continues the innermost for loop only.<br><br>
+
+			Syntax:
+			<pre>
+			labelname:  
+			for(initialization;condition;incr/decr)
+			{  
+				//code to be executed  
+			} 
+			</pre><br>
+			Example:
+			<pre>
+			//A Java program to demonstrate the use of labeled for loop  
+			public class LabeledForExample 
+			{  
+				public static void main(String[] args) 
+				{  
+				    //Using Label for outer and for loop  
+				    aa:  
+				        for(int i=1;i<=3;i++)
+				        {  
+				            bb:  
+				                for(int j=1;j<=3;j++)
+				                {  
+				                    if(i==2&&j==2)
+				                    {  
+				                        break aa;  
+				                    }  
+				                    System.out.println(i+" "+j);  
+				                }  
+				        }  
+				}  
+			} 	
+			</pre>
+			</h5><br> 
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1E3Y-pY6tcQl1GhcVOqsJlQNJelyn6NKr/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

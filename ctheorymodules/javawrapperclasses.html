@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javawrapper</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Wrapper Classes</h3><br>
+	 		<h5>
+	 			1.Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.<br><br>
+
+				2.Sometimes you must use wrapper classes, for example when working with Collection objects, such as ArrayList, where primitive types cannot be used (the list can only store objects).<br><br>
+
+				3.Since you're now working with objects, you can use certain methods to get information about the specific object.<br><br>
+
+				4.For example, the following methods are used to get the value associated with the corresponding wrapper object: <br><br>
+				5.intValue(), byteValue(), shortValue(), longValue(), 	floatValue(), doubleValue(), charValue(), booleanValue().<br><br>
+
+				6.Another useful method is the toString() method, which is used to convert wrapper objects to strings.<br><br>
+
+				7.For example we convert an Integer to a String, and use the length() method of the String class to output the length of the "string".<br><br>
+				<table class="table">
+			  <thead class="thead-light">
+			    <tr>
+			      <th scope="col">Primitive type</th>
+			      <th scope="col">Wrapper class</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      
+			      <td>boolean</td>
+			      <td>Boolean</td>
+			    </tr>
+			    <tr>
+			      
+			      <td>int</td>
+			      <td>Integer</td>
+			    </tr>
+			    <tr>
+			     
+			      <td>float</td>
+			      <td>Float</td>
+			    </tr>
+			    <tr>
+			      
+			      <td>char</td>
+			      <td>Character</td>
+			    </tr>
+			    <tr>
+			      <td>byte</td>
+			      <td>Byte</td>
+			    </tr>
+			    <tr>
+			     
+			      <td>short</td>
+			      <td>Short</td>
+			    </tr>
+			    <tr>
+			     
+			      <td>double</td>
+			      <td>Double</td>
+			    </tr>
+			    <tr>
+			      
+			      <td>long</td>
+			      <td>Long</td>
+			    </tr>
+			    
+			  </tbody>
+			</table><br><br>
+			Example:
+			<pre>
+			//Java program to convert primitive into objects  
+			//Autoboxing example of int to Integer  
+			public class WrapperExample1
+			{  
+				public static void main(String args[])
+				{  
+				//Converting int into Integer  
+				int a=20;
+				//converting int into Integer explicitly  
+				Integer i=Integer.valueOf(a);  
+				//autoboxing, now compiler will write Integer.valueOf(a) internally
+				Integer j=a;  
+					  
+				System.out.println(a+" "+i+" "+j);  
+				}
+			}  	
+			</pre>
+
+	 		</h5><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/10wzBluDveGaRgEMzfANSsyOzsHzkUlvx/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

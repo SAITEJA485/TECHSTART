@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>JavaScript Prototype Object</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	  <div class="card-body">
+	    <h3 class="text-primary">JavaScript Prototype Object</h3>
+	    <br>
+	    <h5>
+			JavaScript is a prototype-based language that facilitates the objects to acquire properties and features from one another. Here, each object contains a prototype object.<br><br>
+			In JavaScript, whenever a function is created the prototype property is added to that function automatically. This property is a prototype object that holds a constructor property.<br><br>
+			Syntax:<br><br>
+			1.	ClassName.prototype.methodName  <br><br>
+		</h5>
+	    <br>
+
+	    <h3 class="text-primary">What is the requirement of a prototype object?</h3>
+	    <h5>
+	    
+		Whenever an object is created in JavaScript, its corresponding functions are loaded into memory. So, a new copy of the function is created on each object creation.<br><br>
+In a prototype-based approach, all the objects share the same function. This ignores the requirement of creating a new copy of function for each object. Thus, the functions are loaded once into the memory.
+<br><br>
+
+		</h5>
+		<br>
+
+		<h3 class="text-primary">Prototype Chaining</h3> 
+		<h5>
+			
+			In JavaScript, each object contains a prototype object that acquires properties and methods from it. Again an object's prototype object may contain a prototype object that also acquires properties and methods, and so on. It can be seen as prototype chaining. <br><br>
+
+		</h5>
+		<br>
+
+		<h3 class="text-primary">JavaScript Prototype Object Example 1</h3>
+		<h5>
+			
+			Let's see an example to add a new method to the constructor function.
+			<br><br>
+			<img src="obj1.png">
+			<br><br>
+			<img src="obj2.png"><br><br>
+		</h5>
+		<br>
+		
+	  </div>
+
+	</div>
+</div>
+	
+</body>
+</html>

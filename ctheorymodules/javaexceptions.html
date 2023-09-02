@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javaexceptions</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3 class="text-primary">Java Exceptions</h3><br>
+			<h5>	 		
+			When executing Java code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.<br><a href=""></a>
+
+			When an error occurs, Java will normally stop and generate an error message. The technical term for this is: Java will throw an exception (throw an error).
+			</h5><br><br>
+
+			<h5 class="text-primary">Java try and catch</h5>
+			<h5>
+			The try statement allows you to define a block of code to be tested for errors while it is being executed.<br><br>
+
+			The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.<br><br>
+
+			The try and catch keywords come in pairs:<br>
+
+			Syntax:
+			<pre>
+			try 
+			{
+			  //  Block of code to try
+			}
+			catch(Exception e)
+			{
+			  //  Block of code to handle errors
+			}
+			</pre><br>
+			Example:
+			<pre>
+			class TestFinallyBlock 
+			{    
+			  public static void main(String args[])
+			  {    
+			  try
+			  {    
+				//below code do not throw any exception  
+			  	 int data=25/5;    
+			   	System.out.println(data);    
+			  }    
+				//catch won't be executed  
+			  catch(NullPointerException e)
+			  {  
+				System.out.println(e);  
+			  }    
+			//executed regardless of exception occurred or not  
+			 finally 
+			 {  
+				System.out.println("finally block is always executed");  
+			  }    
+			    
+				System.out.println("rest of phe code...");    
+			  }    
+			} 	
+			</pre>
+			</h5><br><br>
+
+			<h5 class="text-primary">Finally</h5>
+			<h5>
+			The finally statement lets you execute code, after try...catch, regardless of the result.
+			</h5><br><br>
+
+			<h5 class="text-primary">The throw keyword</h5>
+			<h5>
+			The throw statement allows you to create a custom error.<br><br>
+
+			The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc
+			<br>
+			Example:
+			<pre>
+			import java.io.*;  
+  
+			public class TestThrow2 
+			{   
+			  
+			    //function to check if person is eligible to vote or not   
+			    public static void method() throws FileNotFoundException 
+			    {  
+			  
+			        FileReader file = new FileReader("C:\\Users\\Anurati\\Desktop\\abc.txt");  
+			        BufferedReader fileInput = new BufferedReader(file);  
+			  
+			      
+			        throw new FileNotFoundException();  
+			      
+			    }  
+			    //main method  
+			    public static void main(String args[])
+			    {  
+			        try  
+			        {  
+			            method();  
+			        }   
+			        catch (FileNotFoundException e)   
+			        {  
+			            e.printStackTrace();  
+			        }  
+			        System.out.println("rest of the code...");    
+			   }    
+			} 	
+			</pre>
+			</h5><br>
+			<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/13xuyWkwWMwF_HtgwS9JhZMCt5Hxn8067/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<title>javatypecasting</title>
+	<style type="text/css">
+		*
+		{
+			font-family: 'Secular One', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5">
+	<div class="card">
+
+	 	<div class="card-body">
+	 		<h3>Java Typecasting</h3><br>
+	 		<h5>
+	 			Type casting is when you assign a value of one primitive data type to another type.<br><br>
+
+				In Java, there are two types of casting:<br><br>
+
+				<h5 class="text-primary">1.Widening Casting (automatically)</h5>
+				 
+				converting a smaller type to a larger type size<br>
+				byte - short - char - int - long - float - double<br><br>
+
+				<h5 class="text-primary">2.Narrowing Casting (manually)</h5> 
+
+				converting a larger type to a smaller size type<br>
+				double - float - long - int - char - short - byte
+	 		</h5>
+	 		<br><br>
+
+	 		<pre>
+	 			<h4>Widening Example</h4>
+	 			public class Main 
+	 			{
+				  public static void main(String[] args) 
+				  {
+				    int myInt = 9;
+				    double myDouble = myInt; // Automatic casting: int to double
+
+				    System.out.println(myInt);      // Outputs 9
+				    System.out.println(myDouble);   // Outputs 9.0
+				  }
+				}
+	 		</pre><br><br>
+
+	 		<pre>
+	 			<h4>Narrowing Example</h4>
+	 			public class Main 
+	 			{
+				  public static void main(String[] args) 
+				  {
+				    double myDouble = 9.78d;
+				    int myInt = (int) myDouble; // Manual casting: double to int
+
+				    System.out.println(myDouble);   // Outputs 9.78
+				    System.out.println(myInt);      // Outputs 9
+				  }
+				}
+	 		</pre><br>
+	 		<h4 class="text-danger">View/Download notes </h4>
+			<a href = "https://docs.google.com/document/d/1SJIyMU_0bNA3L1Cx2ZxX01NE6q-NjG2b/edit?usp=sharing&ouid=114081731076469558939&rtpof=true&sd=true">Click here to view file</a>
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
